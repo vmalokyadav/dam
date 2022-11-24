@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-ua-Compatible" content="IE=edge">
+
+    <title>DYMAND</title>
+  </head>
+  <body>
+    <!-- <h1>ALOK &nbsp;&nbsp;&nbsp;&nbsp; YADAV</h1> -->
+    <script>
+        let n =5;//ALOK YADAV
+        let alo ="";
+        //upside pyramid
+        for (let i = 1;i<=n; i++){
+            //printing s
+            for (let j = n; j > i; j--){
+                alo += " ";
+                
+            }
+            //printing *
+            for(let k = 0;k<i*2-1;k++){
+                alo = alo + "*";
+            }
+            alo = alo + "\n"
+        }
+        //>pyramid downside
+        for(let i = 1;i<=n-1;i++){
+            //printing s
+            for(let j = 0;j<i;j++){
+                alo = alo + " "
+            }
+            //ptinting *
+            for(let k=(n-i)*2-1;k>0;k--){
+                alo = alo + "*"
+            }
+           alo = alo + "\n"
+            console.log(alo);
+            console("Created by Alok Yadav😎")
+        }
+    </script>
+  </body>
+</html>
